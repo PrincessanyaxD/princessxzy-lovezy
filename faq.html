@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAQ ni,ninja</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+            background-image: url('luhbg.jpg'); /* Add your background image URL here */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the background image */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(224, 85, 178, 0.2); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(237, 255, 72); /* Drop shadow effect */
+        }
+        
+        .faq-section h1 {
+            color: #f16ebb; /* Change text color of FAQ title */
+            text-align: center; /* Center the FAQ title */
+            text-shadow: 2px 2px 4px rgb(237, 255, 79);
+        }
+        
+        .faq-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #eb6fb7; /* Set background color */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #e8ff64;
+        }
+        
+        .faq-item:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #ff61b0;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        
+        .faq-item:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgb(255, 66, 170);
+        }
+        
+        .faq-question {
+            color: #fdff6f;
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .faq-item:hover .faq-question {
+            color:#f4f75b; /* Change text color on hover */
+        }
+        
+        .faq-answer {
+            color: #f4f75b;
+            font-size: 16px;
+            line-height: 1.6;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .faq-item:hover .faq-answer {
+            color: #f4f75b; /* Change text color on hover */
+        }
+
+        .back-to-home {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px auto 0; /* Centering the button */
+            color: #ff63b1;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: #fffc4c; /* Set background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-to-home:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #ff44d0;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        .back-to-home:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- FAQ section -->
+    <div class="container">
+        <section class="faq-section">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+            <div class="faq-item">
+                <h2 class="faq-question">What types of computer and server issues do you repair?</h2>
+                <p class="faq-answer">We specialize in repairing a wide range of computer and server issues, including hardware malfunctions, software glitches, networking problems, data recovery, system optimization, and performance upgrades. Whether it's a slow-running computer, a server outage, a virus infection, or data loss, our troupe are equipped to diagnose and fix the issue efficiently to ensure your systems run smoothly and reliably.</p>
+            </div>
+            <div class="faq-item">
+                <h2 class="faq-question">What are your rates and pricing structures for cabling and wiring services?</h2>
+                <p class="faq-answer">Our pricing for cabling and wiring services is customized based on the specific project requirements, such as the complexity of the installation, types of cables needed, and any additional services requested. We offer competitive rates and provide detailed quotes after assessing your needs during a consultation. </p>
+            </div>
+            <div class="faq-item">
+                <h2 class="faq-question"> Can you handle rush or urgent design projects if needed?</h2>
+                <p class="faq-answer">Absolutely, we can handle rush or urgent design projects when needed. Our troupe understands the importance of meeting tight deadlines and can prioritize your project to ensure timely delivery without compromising on quality. </p>
+            </div>
+            
+            <!-- Add more FAQ items as needed -->
+            <div style="text-align: center;">
+                <a href="index.html" class="back-to-home">Back to Home</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

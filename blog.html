@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page ni,ninja</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: url('luhbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ff50bc;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #fcff50;
+            text-shadow: 2px 2px 4px rgba(247, 113, 207, 0.7);
+        }
+        .post {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(156, 107, 130, 0.301);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgb(238, 253, 104);
+        }
+        .post:hover {
+            transform: scale(1.03);
+        }
+        .post:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(247, 255, 133, 0.404) 0%, rgba(250, 150, 205, 0.8) 100%);
+            z-index: -1;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+        .post:hover:before {
+            opacity: 1;
+        }
+        .post img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            filter: brightness(80%) contrast(120%);
+            transition: filter 0.3s ease-in-out;
+        }
+        .post:hover img {
+            filter: brightness(100%) contrast(100%);
+        }
+        .post h2 {
+            font-size: 2em;
+            margin: 0;
+            color: #f767bb;
+            text-shadow: 2px 2px 4px rgba(255, 252, 76, 0.7);
+        }
+        .post p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #fcff50;
+        }
+        .post a {
+            color:#fcff50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .post a:hover {
+            color: #ff4190;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .back-home a {
+            color: #ff94cf;
+            background-color: #fcff50;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 6px 10px rgba(243, 252, 119, 0.3);
+        }
+        .back-home a:hover {
+            background-color: #ff4190;
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Blog Page!</h1>
+        <p>Explore our latest articles and posts.</p>
+
+        <div class="post">
+            <h2>Blog Post 1: An adventure with my love</h2>
+            <img src="blog1.jpg" alt="Post 1">
+            <p>I'm going on an exciting seaside tree-planting adventure with my partner. Our destination is a gorgeous stretch of coastline with an amazing backdrop created by the meeting of sand dunes and an endless sky. Together, armed with resolve and baby plants, we will tend to the land. Every tree we plant will serve as a potent reminder of our commitment to protecting the environment. Encircled by the breathtaking view and playful waves, we will be creating a vibrant natural landscape along the shore as we plant the seeds of change. In this peaceful setting, our love for the earth and one another will unite, creating a bond that will last as long as the trees we plant.</p>
+            <p>Date: April 29, 2024</p>
+            <p><strong>Category:</strong> Environment Adventure</p>
+            <p><a href="#">Read More</a></p>
+        </div>
+
+        <div class="post">
+            <h2>Blog Post 2: Capturing our beautiful smile </h2>
+            <img src="blog2.jpg" alt="Post 2">
+            <p>I have a wonderful memory from our school's college fest. As my friend walked ahead to pose for the photographer, I quickly caught up, flashed a peace sign, and we both beamed with joy, creating a perfect moment together in the picture. The fest was packed with exciting activities like playing darts, getting our faces painted, singing karaoke, and best of all, indulging in free ice cream.</p>
+            <p>Date: April 19, 2024</p>
+            <p><strong>Category:</strong> College Fest</p>
+            <p><a href="#">Read More</a></p>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

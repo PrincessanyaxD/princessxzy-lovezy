@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services ni,ninja</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .services {
+            padding: 50px 0;
+            background-image: url('luhbg.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: rgb(255, 108, 194); /* Set text color to white for better readability */
+            position: relative;
+            overflow: hidden; /* Hide overflow to prevent background image from showing outside */
+        }
+        
+        .service,
+        .back-to-home {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(252, 136, 233, 0.795); /* Set background color with opacity for better readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(236, 74, 214, 0.493);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #ff5fc2;
+        }
+        
+        .service:before,
+        .back-to-home:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #eeff58;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        
+        .service:hover:before,
+        .back-to-home:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .service:hover,
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(234, 245, 85, 0.3);
+        }
+        
+        .service h2,
+        .back-to-home {
+            color: #fbfd6a;
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .service:hover h2,
+        .back-to-home:hover {
+            color: #ff61c2; /* Change text color on hover */
+        }
+        
+        .service p,
+        .back-to-home {
+            color: #fbfd6a;
+            font-size: 16px;
+            line-height: 1.6;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .service:hover p,
+        .back-to-home:hover {
+            color: #ff38bd /* Change text color on hover */
+        }
+        
+        .services h1 {
+            margin-bottom: 30px; /* Increase spacing between heading and services */
+            text-shadow: 2px 2px 4px rgb(221, 255, 97); /* Add text shadow for better readability */
+        }
+
+        .back-to-home {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            color: #fbff11;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: rgb(253, 101, 220); /* Set background color with opacity for better readability */
+            box-shadow: 0 4px 8px rgba(245, 248, 90, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(244, 255, 83, 0.808);
+        }
+
+        .back-to-home:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #fcff4c;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        .back-to-home:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Services details -->
+    <section class="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="service">
+                <h2>Computer and Server repair</h2>
+                <p> We offer fast reliable repairs for desktops, laptops, and servers. You can expect quick diagnosis of hardware problems, efficient repairs to minimize downtime, and high-quality replacement parts.</p>
+            </div>
+            <div class="service">
+                <h2>Cabling and Wiring services</h2>
+                <p> From data and voice networks to fiber optic installations, we provide efficient, high-quality solutions tailored to your specific needs. Expect meticulous planning, expert installation, and rigorous testing to guarantee optimal performance and reliability. </p>
+            </div>
+            <div class="service">
+                <h2>Graphic Design</h2>
+                <p> We specialize in creating eye-catching designs for a variety of needs, including logos, brochures, websites, social media graphics, and more. We provide high-quality, creative solutions tailored to reflect your unique brand identity and engage your target audience.</p>
+            </div>
+            
+            <!-- Add more services as needed -->
+            <a href="index.html" class="back-to-home">Back to Home</a>
+        </div>
+    </section>
+</body>
+</html>
